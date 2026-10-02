@@ -96,11 +96,11 @@ for v in d.values(): pass
 ```python
 from collections import deque, Counter, defaultdict, namedtuple
 
-# deque - O(1) both ends (good for queue/stack)
+# deque - O(1) both ends (good for queue/stack/deque ADT)
 dq = deque([1,2,3])
-dq.append(4)        # right
+dq.append(4)        # right (stack top if using append/pop)
 dq.appendleft(0)    # left
-dq.pop()            # right
+dq.pop()            # right (stack pop)
 dq.popleft()        # left O(1) vs list.pop(0) O(n)
 dq.extend([5,6])
 dq.extendleft([-1,0])  # reverses order
